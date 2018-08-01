@@ -1,5 +1,7 @@
 '''
 centering
+QDesktopWidget : provides information about user's desktop, screen size
+
 '''
 
 import sys
@@ -14,16 +16,16 @@ class Example(QWidget):
     def initUI(self):
 
         self.resize(250, 150)
-        self.center()
+        self.center() # center the window
 
         self.setWindowTitle('Centered')
         self.show()
 
     def center(self):
-        qr = self.frameGeometry()
-        cp = QDesktopWidget().availableGeometry().center()
-        qr.moveCenter(cp)
-        self.move(qr.topLeft())
+        qr = self.frameGeometry() # get a rectangle : geometry of the "main" window
+        cp = QDesktopWidget().availableGeometry().center() # get screen resolution - get center point
+        qr.moveCenter(cp) # move rectangle; doesn't change size
+        self.move(qr.topLeft()) # move application window
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
