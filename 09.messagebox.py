@@ -22,8 +22,8 @@ class Example(QWidget):
     
     def closeEvent(self, event): # Handle QCloseEvent
         reply = QMessageBox.question(self, 'Message',
-        "Are yur sure to quit?", QMessageBox.Yes
-        | QMessageBox.No, QMessageBox.No )
+        "Are yur sure to quit?", QMessageBox.Yes # Combination of Buttons
+        | QMessageBox.No, QMessageBox.No ) # Default Button
 
         if reply == QMessageBox.Yes:
             event.accept()
