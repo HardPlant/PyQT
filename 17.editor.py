@@ -1,6 +1,8 @@
 '''
-menu
-
+text editor
+Exercise one: Write a text editor.
+Exercise two: Write an mp3 player.
+Exercise three: Write a file manager.
 '''
 
 import sys
