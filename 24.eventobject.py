@@ -22,7 +22,7 @@ class Example(QWidget):
         self.label = QLabel(self.text, self)
         grid.addWidget(self.label, 0, 0, Qt.AlignTop)
 
-        self.setMouseTracking(True)
+        self.setMouseTracking(True) # disabled -> when one mouse button pressed, enabled -> no button press
 
         self.setLayout(grid)
         
