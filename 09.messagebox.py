@@ -2,9 +2,6 @@
 messagebox
 '''
 
-'''
-Programmatically Quit
-'''
 
 import sys
 from PyQt5.QtWidgets import QWidget, QMessageBox, QApplication
